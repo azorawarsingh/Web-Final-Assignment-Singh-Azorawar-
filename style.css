@@ -1,0 +1,291 @@
+/* Add any CSS you need to this file. */
+body {
+  margin: 0px;
+  padding: 0px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.slide-left {
+  width: 50%;
+  height: 100vh;
+  background-image: url(../images/grey.jpeg);
+  background-attachment: fixed;
+  background-size: 100vh auto;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+}
+.slide-right {
+  width: 50%;
+  height: 100vh;
+  background-image: url(../images/white1.jpeg);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+}
+.wrapper {
+  display: flex;
+}
+.menu,
+.img-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 50px;
+  font-family: calibri;
+}
+.menu ul {
+  display: flex;
+}
+
+.menu:hover {
+  color: #000000;
+}
+.menu ul li {
+  margin: 0px 25px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+.menu a:hover {
+  color: #4b0082;
+}
+.menu a {
+  color: #808080;
+}
+.logo {
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: 2px solid #686868;
+  padding: 5px 20px;
+}
+.login {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #808080;
+  color: #383030;
+  border-radius: 5px;
+}
+.login:hover {
+  background-color: #e6e6fa;
+  transition: all ease 0.5s;
+}
+.product-name {
+  position: absolute;
+  left: 40%;
+  top: 15%;
+  transform: translate(-50%, -20%);
+}
+
+.product-name h1:hover {
+  color: #8b0000;
+}
+.product-name h1 {
+  letter-spacing: 0px;
+  margin: 0px;
+  padding: 0px;
+  font-family: BAD GRUNGE;
+  font-size: 150px;
+  color: #a9a9a9;
+}
+.footer-heading {
+  font-family: calibri;
+  color: #708090;
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+.footer {
+  position: absolute;
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+  left: 0px;
+  bottom: 0px;
+}
+.footer-heading h2 {
+  margin-right: 20px;
+}
+.footer-heading span {
+  border: 2px solid #000000;
+  width: 30px;
+  box-sizing: border-box;
+  margin: 0px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+
+.footer-heading span:hover {
+  color: #000080;
+}
+
+.footer p {
+  color: #000000;
+  font-family: calibri;
+  line-height: 15px;
+  font-weight: 400;
+  width: 300px;
+  font-size: 16px;
+}
+.social {
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+}
+.social a {
+  color: #696969;
+  border-left: 2px solid #6e6e6e;
+  font-family: myriad pro;
+  padding: 0px 10px;
+  letter-spacing: 2px;
+  transition: all ease 0.5s;
+}
+.social a:hover {
+  border-left: 2px solid #088adc;
+  color: #000000;
+}
+
+.product-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 70%;
+}
+.cart-opt {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 50px;
+  right: 60px;
+}
+.cart-opt a,
+p {
+  font-family: calibri;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 10px;
+}
+.price {
+  font-size: 20px;
+  color: #161616;
+}
+.add-btn {
+  background-color: #808080;
+  font-size: 18px;
+  border-radius: 5px;
+  width: 145px;
+  height: 45px;
+  color: #3f3636;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.add-btn:hover {
+  background-color: #f8f8ff;
+  transition: all ease 0.5s;
+}
+.button {
+  position: absolute;
+  bottom: 7px;
+  left: 35px;
+  display: flex;
+}
+
+.button a {
+  color: #fbfbfb;
+  background-color: #483d8b;
+  width: 40px;
+  height: 40px;
+  font-size: 14px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: calibri;
+  margin: 0px 5px;
+}
+/*contains the button width, size and also the colour which it is.*/
+.active-btn {
+  width: 75px !important;
+  height: 70px !important;
+  background-color: #483d8b !important;
+  font-size: 25px !important;
+}
+/*contains the text size, width and more. For all 10 watches*/
+.text-container1,
+.text-container2,
+.text-container3,
+.text-container4,
+.text-container5,
+.text-container5,
+.text-container6,
+.text-container7,
+.text-container8,
+.text-container9,
+.text-container10 {
+  position: absolute;
+  width: 100%;
+  height: 88%;
+  left: -10000px;
+}
+.active-text-slide {
+  left: auto;
+}
+.active-text-slide h1 {
+  animation: text-animation ease 0.5s;
+}
+/*image function*/
+.img-container1,
+.img-container2,
+.img-container3,
+.img-container4,
+.img-container5,
+.img-container6,
+.img-container7,
+.img-container8,
+.img-container9,
+.img-container10 {
+  position: absolute;
+  width: 98%;
+  height: 84%;
+  right: -1000000px;
+}
+.active-img-slide {
+  right: auto;
+  animation: fade ease 1s;
+}
+.active-text-slide > .footer {
+  animation: fade ease 1s;
+}
+@keyframes text-animation {
+  0% {
+    letter-spacing: 100px;
+  }
+  100% {
+    letter-spacing: 0px;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.button a:hover {
+  background-color: #4b0082;
+  transition: all ease 0.5s;
+}
